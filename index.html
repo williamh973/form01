@@ -1,0 +1,51 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <style>
+
+#container-form {
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+input {
+border: 1px solid black;
+background: none;
+padding: 1em;
+font-size: 1em;
+color: black;
+border-radius: 10px;
+transition: 0.5s;
+}
+label {
+    position: absolute;
+    left: 20px;
+    pointer-events: none;
+    color: grey;
+    transform: translateY(1em);
+    transition: 0.5s;
+    width: 80px;
+    text-align: center;
+    height: 25px;
+}
+input:focus {
+    outline: none;
+    border: 2px solid rgb(0, 255, 0);
+}
+input:focus ~ label {
+    transform: translateY(-50%) scale(0.8);
+    transition: 0.5s;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+      </style>
+    </head>
+    <body>
+      <div>
+        <input type="text">
+        <label for="firstname">Firstname</label>
+      </div>
+   
+</body>
+    </html>
